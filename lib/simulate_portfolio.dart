@@ -364,46 +364,6 @@ class HomePageState extends State<SimulatePortfolioPage> {
         ),
       ),
     );
-    final data1 = SfCartesianChart(
-      title: ChartTitle(
-        text: 'Ödeme Türlerine Göre Ödeme Miktarı',
-        textStyle: TextStyle(fontSize: 18),
-      ),
-
-      series: <LineSeries>[
-        LineSeries<Payment, String>(
-          dataSource: _payments,
-          xValueMapper: (Payment payment, _) => payment.paymentType,
-          yValueMapper: (Payment payment, _) => payment.amount,
-          color: Colors.blue,
-          name: 'YAY',
-        ),
-        LineSeries<Payment, String>(
-          dataSource: _payments,
-          xValueMapper: (Payment payment, _) => payment.paymentType,
-          yValueMapper: (Payment payment, _) => payment.amount,
-          color: Colors.red,
-          name: 'AFT',
-        ),
-        LineSeries<Payment, String>(
-          dataSource: _payments,
-          xValueMapper: (Payment payment, _) => payment.paymentType,
-          yValueMapper: (Payment payment, _) => payment.amount,
-          color: Colors.green,
-          name: 'GFB',
-        ),
-      ],
-      primaryXAxis: NumericAxis(
-        majorGridLines: MajorGridLines(
-          dashArray: [5, 5],
-        ),
-      ),
-      primaryYAxis: NumericAxis(
-        majorGridLines: MajorGridLines(
-          dashArray: [5, 5],
-        ),
-      ),
-    );
     return Scaffold(
       appBar: AppBar(
         title: Column(
