@@ -27,7 +27,7 @@ List<Map<String,dynamic>> _fonlist1 = [];
 
 
 
-
+//Veritabanından çekememesi durumunda yedek olarak tutulmaktadır.
   List<_Change> data1 = [
     _Change( 'ABG', 	37.851024504640584),
     _Change('TAU', 	20.472755401248442),

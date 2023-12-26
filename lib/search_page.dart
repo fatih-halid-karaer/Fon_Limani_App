@@ -44,10 +44,7 @@ class _SearchPageState extends State<SearchPage> {
           IconButton(
             icon: Icon(Icons.help_outline, size: 24, color: Colors.blue),
             onPressed: () {
-              // Burada butona tıklandığında yapılacak işlemleri ekleyebilirsiniz.
-              // Örneğin, belirli bir web sitesine yönlendirme yapabilirsiniz.
-              // Navigator.push yerine belirli bir URL'ye yönlendirme yapabilirsiniz.
-              // Navigator.push(context, MaterialPageRoute(builder: (context) => HelpPage()));
+             
               launchUrl("https://0.0.0.0/fon/{${_textFieldController.text}}?date=1" as Uri);
             },
           ),

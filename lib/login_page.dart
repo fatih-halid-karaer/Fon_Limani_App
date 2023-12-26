@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
   void _login(BuildContext context) async {
     // Burada, kullanıcı adı ve şifre kontrolü yapabilir ve giriş durumuna göre işlem yapabilirsiniz.
     // Şu anda sadece basit bir kontrol yapıyoruz ve doğru ise ana sayfaya yönlendiriyoruz.
-    //API().loginUser(_usernameController.text, _passwordController.text);
+    API().loginUser(_usernameController.text, _passwordController.text);
     if(_usernameController.text == 'kul' && _passwordController.text == 'sif') {
       Navigator.pushReplacement(
         context,
