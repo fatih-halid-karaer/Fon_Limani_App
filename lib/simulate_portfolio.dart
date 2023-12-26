@@ -26,11 +26,7 @@ class HomePageState extends State<SimulatePortfolioPage> {
 
 
 
-  List<Payment> _payments = [
-     Payment('YAY', 29417.09905),
-     Payment('AFT', 3312.01),
-     Payment('GFB', 17749.374),
-   ];
+ 
   final dataMap = <String, double>{
     "YAY": 58.3,
     "AFT": 35.2,
