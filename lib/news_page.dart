@@ -9,9 +9,9 @@ class NewsPage extends StatefulWidget {
 }
 
 class _NewsPageState extends State<NewsPage> {
-  final String _apiKey = "s67fd6sg67asd67g4sdd3gahfgsdl26875768dfasfsf78sdg78s8g89l568";
+  final String _apiKey = "46837fe442f20adb0f8f74957fdba342";
 
-  final String _baseUrl = "http://192.168.1.108:8000/funds/get_all_funds";
+  final String _baseUrl = "http://api.exchangeratesapi.io/v1/latest?access_key=";
 double _sonuc = 0;
   Map<String,double> _oranlar = {};
 

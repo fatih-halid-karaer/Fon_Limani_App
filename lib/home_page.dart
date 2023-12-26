@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
   String _currentText = '';
   late PageController _pageController;
   final List<Widget> _pages = [
-    //NewsPage(),
+    NewsPage(),
     SearchPage(),
     PortfolioPage(),
     TrendAnalysisPage(),
@@ -130,25 +130,25 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                /*
+
                 IconButton(
                   onPressed: () => _changePage(0),
                   icon: Icon(Icons.article, size: 24, color: Colors.blue),
-                ), */
-                IconButton(
-                  onPressed: () => _changePage(0),
-                  icon: Icon(Icons.search, size: 24, color: Colors.blue),
                 ),
                 IconButton(
                   onPressed: () => _changePage(1),
-                  icon: Icon(Icons.arrow_circle_down, size: 24, color: Colors.blue),
+                  icon: Icon(Icons.search, size: 24, color: Colors.blue),
                 ),
                 IconButton(
                   onPressed: () => _changePage(2),
-                  icon: Icon(Icons.trending_up, size: 24, color: Colors.blue),
+                  icon: Icon(Icons.arrow_circle_down, size: 24, color: Colors.blue),
                 ),
                 IconButton(
                   onPressed: () => _changePage(3),
+                  icon: Icon(Icons.trending_up, size: 24, color: Colors.blue),
+                ),
+                IconButton(
+                  onPressed: () => _changePage(4),
                   icon: Icon(Icons.pie_chart_outline, size: 24, color: Colors.blue),
                 ),
 

@@ -17,7 +17,7 @@ class SimulatePortfolioPage extends StatefulWidget {
 
 class HomePageState extends State<SimulatePortfolioPage> {
   final String api_key = "s67fd6sg67asd67g4sdd3gahfgsdl26875768dfasfsf78sdg78s8g89l568";
-  final String apiUrl = 'http://192.168.1.108:8000/';
+  final String apiUrl = 'http://192.168.1.102:8000/';
 
 
 
